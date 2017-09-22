@@ -11,12 +11,6 @@ var url = 'mongodb://web:123456Sha@ds141524.mlab.com:41524/shaserviciocotizacion
 
 var github = new GitHubApi({});
 
-github.authenticate({
-  type: "basic",
-  username: 'a-cordoba10',
-  password: 'mega1105'
-});
-
 router.get('/gitFollow/:namegitUserFollower', function(req, res, next) {
 
   let user = req.params.namegitUserFollower;
