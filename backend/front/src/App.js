@@ -79,11 +79,11 @@ export default class App extends Component {
         <div id="content">
           <div className="history">
             <h4>Favorites:</h4>
-          { this.state.favorites.map(favorite => <h2 key={favorite.id}>{favorite.login}</h2>)}
+          { this.state.favorites.map(favorite => <h2 key={favorite.id}><button onClick = { ()=> {this.assignName(favorite.login) }}>{favorite.login}</button></h2>)}
           </div>
           <div className="history">
             <h4>History:</h4>
-            { this.state.history.map(histo => <h2 key={histo.key}>#{histo.value}</h2>)}
+            { this.state.history.map(histo => <h2 key={histo.key}><button onClick = { ()=> {this.assignName(histo.value) }}>#{histo.value}</button></h2>)}
           </div>
           { this.state.followers.map(follower => 
           <div key={follower.id} className="follower">

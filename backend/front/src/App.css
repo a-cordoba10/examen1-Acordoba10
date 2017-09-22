@@ -104,6 +104,13 @@ a:active {
   padding: 5px 0;
   border-bottom: solid 2px #e5e5e5;
 }
+.history:nth-child(1) {
+  background-color: #ffd133;
+  color: white;
+}
+.history:nth-child(1) h4 {
+  color: #ffa020;
+}
 .history h4 {
   font-size: 2em;
   line-height: 0;
@@ -113,13 +120,28 @@ a:active {
 }
 #content h2 {
   display: inline-block;
-  margin: 0 15px;
+}
+#content .history button {
+  border: none;
+  background-color: inherit;
+  font-size: 0.8em;
+  display: inline-block;
+  position: inherit;
   font-weight: 700;
   font-size: 0.8;
   font-style: italic;
   transition: all 0.25s;
+  color: #e5e5e5;
 }
-#content h2:hover {
+#content .history:nth-child(1) button {
+  color: white;
+}
+#content .history:nth-child(1) button:hover {
+  cursor: pointer;
+  color: #ffe280;
+}
+#content button:hover {
+  cursor: pointer;
   color: #cccccc;
 }
 #content .favorite {
