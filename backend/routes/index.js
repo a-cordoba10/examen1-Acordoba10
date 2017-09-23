@@ -12,7 +12,7 @@ var url = 'mongodb://web:123456Sha@ds141524.mlab.com:41524/shaserviciocotizacion
 var github = new GitHubApi({});
 
 router.get('/gitFollow/:namegitUserFollower', function(req, res, next) {
-
+    console.log('Entro aqui');
   let user = req.params.namegitUserFollower;
   
       github.users.getFollowingForUser({
